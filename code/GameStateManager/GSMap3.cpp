@@ -115,7 +115,7 @@
         }
 
         if(shapeM.intersects(shapeP)){
-          GSM->ChangeState(StateTypes::LOSE3);
+          GSM->ChangeState(StateTypes::VICTORY);
         }
 
         if(pos.y > HEIGHT){
