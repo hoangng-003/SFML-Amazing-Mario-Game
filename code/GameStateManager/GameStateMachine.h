@@ -13,7 +13,7 @@ enum StateTypes{
   MAP2,
   LOSE3,
   MAP3,
-  END,
+  VICTORY,
 };
 
 class GameStateBase;

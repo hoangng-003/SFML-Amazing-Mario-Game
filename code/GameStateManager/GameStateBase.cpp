@@ -6,6 +6,7 @@
 #include "GSMap3.h"
 #include "GSLose2.h"
 #include "GSLose3.h"
+#include "GSVictory.h"
 
 
 GameStateBase* GameStateBase :: createState(StateTypes st){
@@ -34,7 +35,8 @@ GameStateBase* GameStateBase :: createState(StateTypes st){
         case MAP3:
           gs = new GSMap3();
           break;
-        case END:
+        case VICTORY:
+          gs = new GSVictory();
           break;
         default:
           break;

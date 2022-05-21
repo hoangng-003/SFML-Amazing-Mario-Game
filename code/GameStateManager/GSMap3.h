@@ -1,6 +1,8 @@
 #pragma once
 
 #include "GameStateBase.h"
+#include "../GameObjects/Animation/Animation.h"
+
 class GSMap3 : public GameStateBase {
   public:
     GSMap3();
@@ -14,6 +16,11 @@ class GSMap3 : public GameStateBase {
     void Update(float deltaTime);
     void Render(RenderWindow* window);
 
+    void setSprite(Texture* texture, float posx , float posy , int i);
+
+
   private:
-    RectangleShape shape;
+      Animation* _mario;
+      Sprite _sprite[2];
+      RectangleShape _checkPoint[2];
 };

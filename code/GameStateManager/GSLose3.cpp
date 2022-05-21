@@ -24,7 +24,7 @@
 	    //Continue
 	    button = new GameButton();
 	    button->Init("continue");
-	    button->setOnClick([]() {GSM->ChangeState(StateTypes::MAP2); });
+	    button->setOnClick([]() {GSM->ChangeState(StateTypes::MAP3); });
 	    button->setPosition(375, 265);
 	    button->setSize(sf::Vector2f(150,50));
 	    button->setOrigin(button->getSize() / 2.f);
