@@ -9,7 +9,7 @@ I. Hướng dẫn cài đặt
    
  2. Tải Mingw32 để run code C++ và thư viện đồ họa SFML
     - B1 : Tải và cài đặt theo hướng dẫn trong bài giảng
-           https://pie-cheque-188.notion.site/C-i-t-h-a-C-Windows-ef0a99a8dcae4dae86a39dc1cbc35980
+    - https://pie-cheque-188.notion.site/C-i-t-h-a-C-Windows-ef0a99a8dcae4dae86a39dc1cbc35980
     - B2 : Chạy lệnh mingw32-make để triển khai file run main.exe 
     - B3 : Chạy lệnh .\main.exe để bắt đầu Game
    
@@ -25,11 +25,11 @@ III. Cấu trúc code ( Source Code )
  
   - Vì em dự định sẽ còn phát triển thêm con Game này trong tương lai khi có thời gian , nên em sẽ cố gắng viết code Hướng đối tượng nhất có thể
   - Về cơ bản , em sử dụng 1 Design Pattern là Singleton , có chức năng như 1 template dùng để quản lý nói chung
-      +> Em sử dụng để quản lý Resources ( Resources Manager ) và quản lý States ( GameStateManager )
-          * Về cơ bản , quản lý Resources có thể hiểu như việc quản lý các đường dẫn Path , khi cần khởi tạo thực thể , chỉ cần gắn "name" cho đối tượng
+    + Em sử dụng để quản lý Resources ( Resources Manager ) và quản lý States ( GameStateManager )
+    + Về cơ bản , quản lý Resources có thể hiểu như việc quản lý các đường dẫn Path , khi cần khởi tạo thực thể , chỉ cần gắn "name" cho đối tượng
               VD : Texture , Font , Music , Sound , .....
-          * với States , các States được kế thừa từ GameStateBase mang những tính năng cần có của 1 Game Page
-            Việc chuyển đổi giữa các States được xử lý bằng GameStateMachine , được thể hiện dưới dạng 1 danh sách List , cơ chế hoạt động như 1 ngăn xếp Stack , các States được Push chồng lên nhau và Pop để lấy ra .
+    + Với States , các States được kế thừa từ GameStateBase mang những tính năng cần có của 1 Game Page
+    + Việc chuyển đổi giữa các States được xử lý bằng GameStateMachine , được thể hiện dưới dạng 1 danh sách List , cơ chế hoạt động như 1 ngăn xếp Stack , các States được Push chồng lên nhau và Pop để lấy ra .
   
   2. Kiến trúc phân tầng 
   
@@ -40,7 +40,7 @@ III. Cấu trúc code ( Source Code )
 
 IV . Kết luận
   1. Ý nghĩa
-    - Vì dự án lần này là sản phẩm cá nhân , nên e đã được phép show ra những kinh nghiệm e có trong việc build 1 Software Application , được làm những gì mình thích , triển khai những ý tưởng khá "ngốc nghếch" , học hỏi thêm được nhiều điều ý tưởng mới cũng như C++ Algorithms và SFML Graphic Library .
+    + Vì dự án lần này là sản phẩm cá nhân , nên e đã được phép show ra những kinh nghiệm e có trong việc build 1 Software Application , được làm những gì mình thích , triển khai những ý tưởng khá "ngốc nghếch" , học hỏi thêm được nhiều điều ý tưởng mới cũng như C++ Algorithms và SFML Graphic Library .
    
   2. Định hướng phát triển dự án
     - Nhờ việc viết Code hướng đối tượng nên việc Phát triển cũng như Debug rất dễ dàng .
