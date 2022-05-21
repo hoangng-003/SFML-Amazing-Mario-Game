@@ -15,11 +15,11 @@ I. Hướng dẫn cài đặt
    
 II. Mô tả dự án ( Project Description )
    1. Hình thức
-     - Thuộc thể loại game phá đảo
-     - Chinh phục các ải của trò chơi để giải cứu công chúa
-     - Thay vì chạy nhẩy , dẫm nấm , ... như Mario thông thường , những map của Amazing Mario Game được set up vô cùng khó , làm cho người chơi khó chịu và ham muốn chinh phục được con game này hơn 
-     - Tập trung chủ yếu vào Tối ưu hóa trải nghiệm người dùng & Đồ họa , làm con Game trở nên sinh động và cuốn hút , làm người chơi vẫn cảm thấy vui vẻ sau những lần thua lên thua xuống
-     - Đầy đủ Menu , Map1,2,3 , Lose , Victory , ....
+     + Thuộc thể loại game phá đảo
+     + Chinh phục các ải của trò chơi để giải cứu công chúa
+     + Thay vì chạy nhẩy , dẫm nấm , ... như Mario thông thường , những map của Amazing Mario Game được set up vô cùng khó , làm cho người chơi khó chịu và ham muốn chinh phục được con game này hơn 
+     + Tập trung chủ yếu vào Tối ưu hóa trải nghiệm người dùng & Đồ họa , làm con Game trở nên sinh động và cuốn hút , làm người chơi vẫn cảm thấy vui vẻ sau những lần thua lên thua xuống
+     + Đầy đủ Menu , Map1,2,3 , Lose , Victory , ....
    
    2. Ví dụ sơ lược về các thức hoạt động của các ải
      - ải 1 : 
@@ -51,7 +51,7 @@ III. Cấu trúc code ( Source Code )
 
 IV . Kết luận
   1. Ý nghĩa
-    + Vì dự án lần này là sản phẩm cá nhân , nên e đã được phép show ra những kinh nghiệm e có trong việc build 1 Software Application , được làm những gì mình thích , triển khai những ý tưởng khá "ngốc nghếch" , học hỏi thêm được nhiều điều ý tưởng mới cũng như C++ Algorithms và SFML Graphic Library .
+    - Vì dự án lần này là sản phẩm cá nhân , nên e đã được phép show ra những kinh nghiệm e có trong việc build 1 Software Application , được làm những gì mình thích , triển khai những ý tưởng khá "ngốc nghếch" , học hỏi thêm được nhiều điều ý tưởng mới cũng như C++ Algorithms và SFML Graphic Library .
    
   2. Định hướng phát triển dự án
     - Nhờ việc viết Code hướng đối tượng nên việc Phát triển cũng như Debug rất dễ dàng .
