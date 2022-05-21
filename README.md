@@ -14,14 +14,17 @@ I. Hướng dẫn cài đặt
     - B3 : Chạy lệnh .\main.exe để bắt đầu Game
    
 II. Mô tả dự án ( Project Description )
-   1. Hình thức
+   
+   1. Video Mô tả sản phẩm : https://youtu.be/f12FjD_wRGI
+ 
+   2. Hình thức
       + Thuộc thể loại game phá đảo
       + Chinh phục các ải của trò chơi để giải cứu công chúa
       + Thay vì chạy nhẩy , dẫm nấm , ... như Mario thông thường , những map của Amazing Mario Game được set up vô cùng khó , làm cho người chơi khó chịu và ham muốn chinh phục được con game này hơn 
       + Tập trung chủ yếu vào Tối ưu hóa trải nghiệm người dùng & Đồ họa , làm con Game trở nên sinh động và cuốn hút , làm người chơi vẫn cảm thấy vui vẻ sau những lần thua lên thua xuống
       + Đầy đủ Menu , Map1,2,3 , Lose , Victory , ....
    
-   2. Ví dụ sơ lược về các thức hoạt động của các ải
+   3. Ví dụ sơ lược về các thức hoạt động của các ải
      - ải 1 : 
       + Tư duy cơ bản của người chơi sẽ là nhẩy lên phá gạch để ăn nấm , vì thế nên e đã cài đinh ẩn vào đó
       + Chạy thẳng qua cũng không được vì đã có tường ẩn chặn , quay ngược lại tìm đường sẽ bị đá rơi xuống .
