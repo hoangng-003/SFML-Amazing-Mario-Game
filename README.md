@@ -54,7 +54,7 @@ III. Cấu trúc code ( Source Code )
 
 IV . Kết luận
   1. Ý nghĩa
-    - Vì dự án lần này là sản phẩm cá nhân , nên e đã được phép show ra những kinh nghiệm e có trong việc build 1 Software Application , được làm những gì mình thích , triển khai những ý tưởng khá "ngốc nghếch" , học hỏi thêm được nhiều điều ý tưởng mới cũng như C++ Algorithms và SFML Graphic Library .
+    - Với 5 ngày hoàn thiện sản phẩm cá nhân , e đã được phép show ra những kinh nghiệm e có trong việc build 1 Software Application , được làm những gì mình thích , triển khai những ý tưởng khá "ngốc nghếch" , học hỏi thêm được nhiều điều ý tưởng mới cũng như C++ Algorithms và SFML Graphic Library .
    
   2. Định hướng phát triển dự án
     - Nhờ việc viết Code hướng đối tượng nên việc Phát triển cũng như Debug rất dễ dàng .
