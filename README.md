@@ -20,8 +20,8 @@ II. Mô tả dự án ( Project Description )
    2. Hình thức
       + Thuộc thể loại game phá đảo
       + Chinh phục các ải của trò chơi để giải cứu công chúa
-      + Thay vì chạy nhẩy , dẫm nấm , ... như Mario thông thường , những map của Amazing Mario Game được set up vô cùng khó , làm cho người chơi khó chịu và ham muốn chinh phục được con game này hơn 
-      + Tập trung chủ yếu vào Tối ưu hóa trải nghiệm người dùng & Đồ họa , làm con Game trở nên sinh động và cuốn hút , làm người chơi vẫn cảm thấy vui vẻ sau những lần thua lên thua xuống
+      + Thay vì chạy nhẩy , dẫm nấm , ... như Mario thông thường , những map của Amazing Mario Game được set up vô cùng khó , mang một cốt truyện cơ bản , làm cho người chơi khó chịu và ham muốn chinh phục được con game này hơn 
+      + Tập trung chủ yếu vào Tối ưu hóa trải nghiệm người dùng ( Đồ họa , âm thanh , giảm O(n) để tăng độ mượt , .... ) , làm con Game trở nên sinh động và cuốn hút , làm người chơi cảm thấy hứng thú sau những lần thua lên thua xuống
       + Đầy đủ Menu , Map1,2,3 , Lose , Victory , ....
    
    3. Ví dụ sơ lược về các thức hoạt động của các ải
@@ -35,15 +35,18 @@ II. Mô tả dự án ( Project Description )
      - Tương tự với ải 2 và 3 : 2 ải này sẽ dễ hiểu hơn một chút vì cũng tương đối quen thuộc       
      
 III. Cấu trúc code ( Source Code )
+
   1. Phong cách code
  
   - Vì em dự định sẽ còn phát triển thêm con Game này trong tương lai khi có thời gian , nên em sẽ cố gắng viết code Hướng đối tượng nhất có thể
+ 
   - Về cơ bản , em sử dụng 1 Design Pattern là Singleton , có chức năng như 1 template dùng để quản lý nói chung
     + Em sử dụng để quản lý Resources ( Resources Manager ) và quản lý States ( GameStateManager )
     + Về cơ bản , quản lý Resources có thể hiểu như việc quản lý các đường dẫn Path , khi cần khởi tạo thực thể , chỉ cần gắn "name" cho đối tượng
+    + Khi đó , Debug , sửa , thêm object sẽ vô cùng dễ dàng
               VD : Texture , Font , Music , Sound , .....
     + Với States , các States được kế thừa từ GameStateBase mang những tính năng cần có của 1 Game Page
-    + Việc chuyển đổi giữa các States được xử lý bằng GameStateMachine , được thể hiện dưới dạng 1 danh sách List , cơ chế hoạt động như 1 ngăn xếp Stack , các States được Push chồng lên nhau và Pop để lấy ra .
+    + Việc chuyển đổi giữa các States được xử lý bằng GameStateMachine , được thể hiện dưới dạng 1 danh sách List , cơ chế hoạt động như 1 ngăn xếp Stack , các States được Push chồng lên nhau và Pop để lấy ra và rất nhiều hàm xử lý khác .
   
   2. Kiến trúc phân tầng 
   
@@ -52,13 +55,19 @@ III. Cấu trúc code ( Source Code )
   - Trong mỗi trang được khai báo các Thực thể , Triển khai các Thực thể bằng việc gắn cho chúng những thuộc tính cần có , Liên kết giữa các thực thể được thể hiện thông qua các hàm xử lý logic
   - Về cơ bản , em cố gắng triển khai các đối tượng theo mô hình Thực Thể - Liên Kết ( E-R ) tuy nhiên vì thời gian khá gấp nên chưa chỉnh chu được code trong từng trang
 
+  3. Thuật toán xử lý trong từng Map
+  - Sau khi set up môi trường như trên , việc thêm Map , thêm đối tượng , ... và phát triển nói chung rất dễ dàng 
+  - Xử lý trong từng map cũng đơn giản
+ 
+  - Mọi thuật toán xử lý map ( Xử lý va chạm , vật thể , animation , jump ( theo gia tốc trọng trường ) , .... ) đều được coi là cơ bản .
+
 IV . Kết luận
   1. Ý nghĩa
     - Với 5 ngày hoàn thiện sản phẩm cá nhân , e đã được phép show ra những kinh nghiệm e có trong việc build 1 Software Application , được làm những gì mình thích , triển khai những ý tưởng khá "ngốc nghếch" , học hỏi thêm được nhiều điều ý tưởng mới cũng như C++ Algorithms và SFML Graphic Library .
    
   2. Định hướng phát triển dự án
     - Nhờ việc viết Code hướng đối tượng nên việc Phát triển cũng như Debug rất dễ dàng .
-      + Em dự định sẽ thêm những ải thú vị , trau truốt hơn về các hoạt động của từng ải , làm sao để chinh phục được 1 ải cần nhiều "não" nhất có thể , tạo được bất ngờ , khó chịu nhất định cho người chơi 
+      + Em dự định sẽ thêm những ải thú vị , trau truốt hơn về các hoạt động của từng ải , làm sao để chinh phục được 1 ải cần nhiều "não" nhất có thể , tạo được bất ngờ , khó chịu nhất định cho người chơi , một cốt truyện thú vị , lôi cuốn
       + Trau truốt hơn về mặt hình ảnh và âm thanh , tối ưu hóa trải nghiệm người dùng sinh động nhất có thể
       + Hosting để mọi người cùng trải nghiệm và đánh giá 
     
